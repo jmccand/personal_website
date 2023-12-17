@@ -22,16 +22,28 @@
     </body>
 
     <!-- define footer -->
-    <footer class="w-full flex flex-row items-center border-t-4 p-4">
+    <footer class="w-full flex flex-row items-center border-t-4 p-4 space-x-4 text-sm">
       <div class="pr-4">Contact Me!</div>
-      <ul class="flex space-x-8">
-	<li>
-	  <NuxtLink to="https://github.com/jmccand" target="_blank" class="border-2 rounded-md p-2 flex flex-row items-center">
-	    <img src="@/assets/images/github-icon.png" style="max-height: 4vh" class="pr-2">
-	    Jmccand
-	  </NuxtLink>
-	</li>
-      </ul>
+      <TagLink :to="'mailto:mail@joelmccandless.com'">
+	<img src="@/assets/images/mail-icon.png" style="max-height: 4vh" class="pr-2">
+	mail@joelmccandless.com
+      </TagLink>
+      <TagLink :to="'https://github.com/jmccand'">
+	<img src="@/assets/images/github-icon.png" style="max-height: 3vh" class="pr-2">
+	GitHub/Jmccand
+      </TagLink>
+      <TagLink :to="'tel:+7812672701'">
+	<img src="@/assets/images/phone-icon.png" style="max-height: 3vh" class="pr-2">
+	(781) 267-2701
+      </TagLink>
+      <TagLink :to="'https://www.linkedin.com/in/joel-mccandless-a09275273/'">
+	<img src="@/assets/images/linkedin-icon.png" style="max-height: 3vh" class="pr-2">
+	LinkedIn
+      </TagLink>
+      <TagLink :to="'https://goo.gl/maps/QgktqPpbrLqry4Mz9'">
+	<img src="@/assets/images/location-icon.png" style="max-height: 3vh" class="pr-2">
+	Lexington, MA
+      </TagLink>
     </footer>
     
   </div>
