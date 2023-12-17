@@ -3,10 +3,11 @@
   <div>
     
     <!-- define header -->
-    <header class="p-4 shadow-lg">
+    <header class="flex flex-row p-4 space-x-10 shadow-lg">
+      <span class="w-auto min-w-fit">Joel McCandless</span>
       <!-- navigation links -->
       <nav class="container flex">
-	<ul class="flex space-x-8">
+	<ul class="flex flex-row space-x-8">
 	  <li><NuxtLink to="/about">About Me</NuxtLink></li>
 	  <li><NuxtLink to="/mission">Mission</NuxtLink></li>
 	  <li><NuxtLink to="/projects">Projects</NuxtLink></li>
@@ -22,7 +23,7 @@
     </body>
 
     <!-- define footer -->
-    <footer class="w-full flex flex-row items-center border-t-4 p-4 space-x-4 text-sm">
+    <footer class="w-full flex flex-col md:flex-row items-center border-t-4 p-4 space-x-4 space-y-2 text-xs lg:text-sm">
       <div class="pr-4">Contact Me!</div>
       <TagLink :to="'mailto:mail@joelmccandless.com'">
 	<img src="@/assets/images/mail-icon.png" style="max-height: 4vh" class="pr-2">
