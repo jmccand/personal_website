@@ -4,7 +4,7 @@
     
     <!-- define header -->
     <header class="flex flex-row p-4 space-x-10 md:text-lg sm:text-base text-sm shadow-lg">
-      <span class="w-auto min-w-fit">Joel McCandless</span>
+      <span class="w-auto min-w-fit font-bold">Joel McCandless</span>
       <!-- navigation links -->
       <nav class="container flex">
 	<ul class="flex flex-row space-x-8">
