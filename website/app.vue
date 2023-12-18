@@ -3,7 +3,7 @@
   <div>
     
     <!-- define header -->
-    <header class="flex flex-row p-4 space-x-10 shadow-lg">
+    <header class="flex flex-row p-4 space-x-10 md:text-lg sm:text-base text-sm shadow-lg">
       <span class="w-auto min-w-fit">Joel McCandless</span>
       <!-- navigation links -->
       <nav class="container flex">
@@ -23,7 +23,7 @@
     </body>
 
     <!-- define footer -->
-    <footer class="w-full flex flex-col md:flex-row items-center border-t-4 p-4 space-x-4 space-y-2 text-xs lg:text-sm">
+    <footer class="w-full flex flex-col md:flex-row items-center border-t-4 p-4 space-x-4 space-y-2 text-xs lg:text-base">
       <div class="pr-4">Contact Me!</div>
       <TagLink :to="'mailto:mail@joelmccandless.com'">
 	<img src="@/assets/images/mail-icon.png" style="max-height: 4vh" class="pr-2">
