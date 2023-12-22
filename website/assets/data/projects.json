@@ -1,0 +1,57 @@
+[
+    {
+	"name" : "Cognitive Robotics: Wumpus Challenge",
+	"start" : "11/23",
+	"end" : "12/13",
+	"goal" : "Make a robot to solve the Wumpus Challenge!",
+	"details" : "Working with a partner, we created a robot using Arduino Nano 33 IoT, the Rensselaer MinSeg Kit, and two infrared sensors.",
+	"thumbnail" : "",
+	"images" : [],
+	"tags" : [],
+	"more" : []
+    },
+    {
+	"name" : "9x9 Tic Tac Toe AI Player",
+	"start" : "",
+	"end" : "",
+	"goal" : "",
+	"details" : "",
+	"thumbnail" : "",
+	"images" : [],
+	"tags" : [],
+	"more" : []
+    },
+    {
+	"name" : "RPI Prerequisites Graph",
+	"start" : "",
+	"end" : "",
+	"goal" : "",
+	"details" : "",
+	"thumbnail" : "",
+	"images" : [],
+	"tags" : [],
+	"more" : []
+    },
+    {
+	"name" : "Lexington Student-Makers for COVID-19",
+	"start" : "",
+	"end" : "",
+	"goal" : "",
+	"details" : "",
+	"thumbnail" : "",
+	"images" : [],
+	"tags" : [],
+	"more" : []
+    },
+    {
+	"name" : "",
+	"start" : "",
+	"end" : "",
+	"goal" : "",
+	"details" : "",
+	"thumbnail" : "",
+	"images" : [],
+	"tags" : [],
+	"more" : []
+    }
+]
