@@ -4,21 +4,21 @@
 	"start" : "11/23",
 	"end" : "12/13",
 	"goal" : "Make a robot to solve the Wumpus Challenge!",
-	"details" : "Working with a partner, we created a robot using Arduino Nano 33 IoT, the Rensselaer MinSeg Kit, and two infrared sensors.",
+	"details" : "My partner and I adapted the Rensselaer MinSeg Motor Kit and programmed an Arduino Nano 33 IoT using ArduinoC++ to solve the Wumpus challenge. Some notable functionality from our project includes reading motor encoders and implementing a basic PID loop to reach target motor positions, creating and maintaining a Bluetooth Light connection between the Arduino and a phone, and connecting and reading infrared sensors for line detection. Additionally, we developed a lightweight algorithm which stores known information about the board and makes logical deductions from it to solve the puzzle. We also made a website using Vue.js with Nuxt and hosted on Amazon Web Services Amplify to document our meetings and results.",
 	"thumbnail" : "",
 	"images" : [],
-	"tags" : [],
-	"more" : []
+	"tags" : ["robotics", "c++", "wiring", "web dev", "collaboration"],
+	"more" : ["Visit our <a href=\"https://wumpus.erikumble.com/\">project website</a>!"]
     },
     {
 	"name" : "9x9 Tic Tac Toe AI Player",
 	"start" : "",
 	"end" : "",
-	"goal" : "",
-	"details" : "",
+	"goal" : "Develop an intelligent computer player to excel at 9x9 Tic Tac Toe!",
+	"details" : "Written in Rust Lang, my first version used a traditional minimax algorithm and a point-based rating system. Since then, I have strengthened the algorithm by making it threaded. With its multuple threads, it is constantly \"thinking\" by using a work queue to build a decision tree breadth first. The tree stores all the computed future boards (amounting to ~5 moves in advance due to limitations in execution speed combined with the exponential growth of potential boards as it looks deeper into the future). I've also improved the rating algorithm to use probability rather than points, because probability (the chance of winning a board) is robust to all of the strange board arrangements which could tickle bugs in the point-based rating (1 point for each X, 4 points for 2 in a row, etc.). With these changes, I've seen significant improvement in how it plays the game.",
 	"thumbnail" : "",
 	"images" : [],
-	"tags" : [],
+	"tags" : ["concurrency", "data structures", "rust lang"],
 	"more" : []
     },
     {
@@ -33,7 +33,7 @@
 	"more" : []
     },
     {
-	"name" : "Lexington Student-Makers for COVID-19",
+	"name" : "UpDownLHS: Digital Voting for School Change",
 	"start" : "",
 	"end" : "",
 	"goal" : "",
