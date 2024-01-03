@@ -10,7 +10,7 @@
 	    <span class="font-bold pr-4">{{ project.name }}</span><span class="pr-1">{{ project.start }}</span>-<span class="pl-1">{{ project.end }}</span><br />
 	    <span>{{ project.goal }}</span><br />
 	    <p v-html="project.details"></p>
-	    <p><span class="font-bold">More:</span><span v-for="more_item in project.more"> <TagLink :to="more_item[1]">{{ more_item[0] }}</TagLink></span></p>
+	    <p><span class="font-bold pr-2">More</span><span v-for="more_item in project.more"><MoreLink :to="more_item[1]">{{ more_item[0] }}</MoreLink></span></p>
 	  </td>
 	  <td class="border-2 border-l-0 p-2">
 	    <img :src="'/_nuxt/assets/images/' + project.thumbnail" :alt="project.name">
