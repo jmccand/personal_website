@@ -8,7 +8,7 @@
 	"thumbnail" : "",
 	"images" : [],
 	"tags" : ["robotics", "c++", "wiring", "web dev", "collaboration"],
-	"more" : ["Visit our <a href=\"https://wumpus.erikumble.com/\" target='_blank'>project website</a>!"]
+	"more" : [["Project Website", "https://wumpus.erikumble.com/"]]
     },
     {
 	"name" : "9x9 Tic Tac Toe AI Player",
@@ -41,7 +41,7 @@
 	"thumbnail" : "",
 	"images" : [],
 	"tags" : [],
-	"more" : ["Visit UpDown's landing page <a href='https://updownlhs.org/' target='_blank'>here</a>.", "View <a href='https://instagram.com/updownlhs?igshid=NGVhN2U2NjQ0Yg==' target='_blank'>UpDown's Instagram</a>!"]
+	"more" : [["Landing Page", "https://updownlhs.org/"], ["Instagram", "https://instagram.com/updownlhs?igshid=NGVhN2U2NjQ0Yg=="]]
     },
     {
 	"name" : "",
