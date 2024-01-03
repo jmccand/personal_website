@@ -8,7 +8,7 @@
 	"thumbnail" : "",
 	"images" : [],
 	"tags" : ["robotics", "c++", "wiring", "web dev", "collaboration"],
-	"more" : [["Project Website", "https://wumpus.erikumble.com/"]]
+	"more" : [["Project Website", "https://wumpus.erikumble.com/design"]]
     },
     {
 	"name" : "9x9 Tic Tac Toe AI Player",
