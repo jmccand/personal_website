@@ -13,7 +13,7 @@
 	    <p><span class="font-bold pr-2">More</span><span v-for="more_item in project.more"><MoreLink :to="more_item[1]">{{ more_item[0] }}</MoreLink></span></p>
 	  </td>
 	  <td class="border-2 border-l-0 p-2">
-	    <img :src="'/_nuxt/assets/images/' + project.thumbnail" :alt="project.name">
+	    <img :src="'/_nuxt/assets/images/' + project.thumbnail" :alt="project.name" style="max-height: 100vh">
 	  </td>
 	</tr>
       </tbody>
