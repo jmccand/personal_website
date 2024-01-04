@@ -5,10 +5,10 @@
 	"end" : "12/13",
 	"goal" : "Assemble and program a robot to solve the Wumpus Challenge!",
 	"details" : "My partner and I adapted the Rensselaer MinSeg Motor Kit and programmed an Arduino Nano 33 IoT using ArduinoC++ to solve the Wumpus challenge. Some notable functionality from our project includes reading motor encoders and implementing a basic PID loop to reach target motor positions, creating and maintaining a Bluetooth Light connection between the Arduino and a phone, and connecting and reading infrared sensors for line detection. Additionally, we developed a lightweight algorithm which stores known information about the board and makes logical deductions from it to solve the puzzle. We also made a website using Vue.js with Nuxt and hosted on Amazon Web Services Amplify to document our meetings and results.",
-	"thumbnail" : "",
+	"thumbnail" : "nanobot.png",
 	"images" : [],
 	"tags" : ["robotics", "c++", "wiring", "web dev", "collaboration"],
-	"more" : [["Project Website", "https://wumpus.erikumble.com/design"]]
+	"more" : [["Git Repo", "https://github.com/ErikUmble/Wumpus-robot"], ["Project Website", "https://wumpus.erikumble.com/design"]]
     },
     {
 	"name" : "9x9 Tic Tac Toe AI Player",
@@ -16,10 +16,10 @@
 	"end" : "11/23",
 	"goal" : "Develop an intelligent computer player to excel at 9x9 Tic Tac Toe!",
 	"details" : "Written in Rust Lang, my first version used a traditional minimax algorithm and a point-based rating system. Since then, I have strengthened the algorithm by making it threaded. With its multiple threads, it is constantly \"thinking\" by using a work queue to build a decision tree breadth first. The tree stores all the computed future boards (amounting to ~5 moves in advance due to the exponential growth of potential boards as it looks into the future). I've also improved the rating algorithm to use probability rather than points, because probability (the chance of winning a board) is robust to all of the strange board arrangements which could tickle bugs in the point-based rating (1 point for each X, 4 points for 2 in a row, etc.). With these changes, I've seen significant improvement in how it plays the game.",
-	"thumbnail" : "",
+	"thumbnail" : "btt_in_game.png",
 	"images" : [],
 	"tags" : ["concurrency", "data structures", "rust lang"],
-	"more" : []
+	"more" : [["Git Repo", "https://github.com/jmccand/big-tac-toe"]]
     },
     {
 	"name" : "RPI Prerequisites Graph",
@@ -27,10 +27,10 @@
 	"end" : "9/23",
 	"goal" : "Crawl the RPI course catalog and display course progressions in a graph!",
 	"details" : "I use two programs to reach the goal: one web crawls the RPI course catalog and parses the course information to create a database while the second creates and displays a graphical representation of the database. In the crawling step, I use Python's requests and beautifulsoup4 libraries to crawl RPI's course catalog, regular expressions to extract the prerequisites for each course, and pickle to store the dictionary of Course objects. To avoid uneccesarily crawling each page multiple times, I cache the original html from every page. For graphical visualization, I write a DOT language file and use graphviz's twopi layout engine to display courses in a radial web graph.",
-	"thumbnail" : "",
+	"thumbnail" : "cs_graph.png",
 	"images" : ["web crawl", "graph viz", "data structures", "regular expressions", "caching"],
 	"tags" : [],
-	"more" : []
+	"more" : [["Git Repo", "https://github.com/jmccand/crawl-classes"]]
     },
     {
 	"name" : "UpDownLHS: Digital Voting for School Change",
@@ -38,10 +38,10 @@
 	"end" : "6/23",
 	"goal" : "Create and market a web app which fosters honest debate about school wide issues!",
 	"details" : "UpDownLHS is an open source Progressive Web App (PWA) for high schoolers, designed to spark conversation about major issues in the school community. UpDown provides Student Senators with a framework to view issues students find pertinent and draft legislation to fix them. Its server is multi-threaded and uses Python's shelve databases with thread locking to store data reliably. It assigns each user a 32 hex digit uuid and sets cookies for sign-in. In addition to 9 viewable web pages, UpDown handles many more behind the scenes requests using Asynchronous JavaScript and XML (AJAX). UpDown's AJAX retrieves data upon the user's request and animates the DOM. While developing the app, I enjoyed designing page layouts, selecting color themes and making the UpDown icon.",
-	"thumbnail" : "",
+	"thumbnail" : "favicon512x512.png",
 	"images" : [],
 	"tags" : [],
-	"more" : [["Landing Page", "https://updownlhs.org/"], ["Instagram", "https://instagram.com/updownlhs?igshid=NGVhN2U2NjQ0Yg=="]]
+	"more" : [["Git Repo", "https://github.com/jmccand/UpDown"], ["Landing Page", "https://updownlhs.org/"], ["Instagram", "https://instagram.com/updownlhs?igshid=NGVhN2U2NjQ0Yg=="]]
     },
     {
 	"name" : "",
