@@ -12,7 +12,7 @@
 	  <p><span class="font-bold pr-2">More</span><span v-for="more_item in project.more"><MoreLink :to="more_item[1]">{{ more_item[0] }}</MoreLink></span></p>
 	</div>
 	<div class="p-2 h-full">
-	  <img :src="'/_nuxt/assets/images/' + project.thumbnail" :alt="project.name" class="max-h-[12rem] max-w-[12rem] min-w-[6rem] object-cover">
+	  <img :src="'/images/' + project.thumbnail" :alt="project.name" class="max-h-[12rem] max-w-[12rem] min-w-[6rem] object-cover">
 	</div>
       </div>
     </div>
