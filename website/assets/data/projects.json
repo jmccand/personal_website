@@ -2,7 +2,7 @@
     {
 	"name" : "Cognitive Robotics: Wumpus Challenge",
 	"start" : "11/23",
-	"end" : "12/13",
+	"end" : "12/23",
 	"goal" : "Assemble and program a robot to solve the Wumpus Challenge!",
 	"details" : "My partner and I adapted the Rensselaer MinSeg Motor Kit and programmed an Arduino Nano 33 IoT using ArduinoC++ to solve the Wumpus challenge. Some notable functionality from our project includes reading motor encoders and implementing a basic PID loop to reach target motor positions, creating and maintaining a Bluetooth Light connection between the Arduino and a phone, and connecting and reading infrared sensors for line detection. Additionally, we developed a lightweight algorithm which stores known information about the board and makes logical deductions from it to solve the puzzle. We also made a website using Vue.js with Nuxt and hosted on Amazon Web Services Amplify to document our meetings and results.",
 	"thumbnail" : "nanobot.png",
