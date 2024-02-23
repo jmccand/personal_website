@@ -16,6 +16,12 @@
 	</div>
       </div>
     </div>
+    <div id="popup" class="rounded-md border-4 fixed top-20 left-10 right-10 bottom-20 bg-white">
+      <div class="absolute top-0 h-20">
+	SOME TEXT
+      </div>
+      
+    </div>
   </main>
 </template>
 
