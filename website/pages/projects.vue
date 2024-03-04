@@ -18,8 +18,8 @@
 	</div>
       </template>
     </div>
-    <div v-if="displayed_project != null" id="popup" class="rounded-md border-4 fixed bg-white right-6 left-6" :style="{ top: targetTop+'px', height: targetHeight+'px' }">
-      <div class="absolute top-0 left-0 right-0 text-center" :html="displayed_project.name">
+    <div v-if="displayed_project != null" id="popup" class="rounded-md border-4 fixed bg-white right-6 left-6 height-0 top-0 transition-all duration-1000" :style="{ top: targetTop+'px', height: targetHeight+'px' }">
+      <div class="absolute top-0 left-0 right-0 text-center">
       </div>
     </div>
   </main>
@@ -27,22 +27,24 @@
 
 <script setup>
  import projects from "@/assets/data/projects.json"
- import { ref } from 'vue'
+ import { ref, onUpdated, nextTick } from 'vue'
 
- var displayed_project = ref(null);
  var targetTop = ref(80);
  var targetHeight = ref(60);
+ var displayed_project = ref(null);
 
- function update_displayed_project(elem_id) {
+ async function update_displayed_project(elem_id) {
    console.log("update called!");
    displayed_project.value = document.getElementById(elem_id);
    var rect = displayed_project.value.getBoundingClientRect();
    targetTop.value = rect.top;
    targetHeight.value = displayed_project.value.offsetHeight;
-   console.log("update done! ");
-   console.log(displayed_project.value);
-   console.log(targetTop.value);
-   console.log(targetBottom.value);
+   await nextTick();
+   await null;
+   console.log(displayed_project.value.getBoundingClientRect());
+   // expand popup
+   targetTop.value = 80;
+   targetHeight.value = innerHeight - targetTop.value - 80;   
  }
  
 </script>
