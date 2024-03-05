@@ -19,7 +19,7 @@
       </template>
     </div>
     <div v-if="displayed_project != null" id="popup" class="text-left rounded-md border-4 fixed bg-white right-4 left-4 height-0 top-0 p-4 overflow-y-scroll transition-all duration-1000" :style="{ top: targetTop+'px', height: targetHeight+'px' }">
-      <span class="font-bold pr-4">{{ displayed_project.name }}</span><span class="pr-1">{{ displayed_project.start }}</span>-<span class="pl-1">{{ displayed_project.end }}</span><br />
+      <span class="font-bold pr-4">{{ displayed_project.name }}</span><span class="pr-1">{{ displayed_project.start }}</span>-<span class="pl-1">{{ displayed_project.end }}</span><span class="absolute right-6 font-sans" @click="displayed_project=null">&#9587</span> <br />
       <span>{{ displayed_project.goal }}</span><br />
       <p v-html="displayed_project.details"></p>
       <br />
