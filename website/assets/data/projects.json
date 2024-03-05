@@ -7,7 +7,7 @@
 	"details" : "You're looking at it! This website is built with Vue.js, Nuxt JS and Tailwind CSS. It's hosted on AWS Amplify, which provides free hosting for small static websites such as this. The Vue.js framework enables me to make automated HTML, such as this page, which uses a Vue for loop to iterate over all of my projects. The project information is stored in a JSON (JavaScript Object Notation) file, and the .vue file responsible for this page structures and styles the content, making it easy to keep content and formatting individually organized. With its shorthand notation of common styling, Tailwind enables quick adjustment of the appearance of pages, including adding breakpoints for responsive web development (try adjusting the page size!).",
 	"images" : ["nuxt_logo.png"],
 	"tags" : [],
-	"more" : []
+	"more" : [["Git Repo", "https://github.com/jmccand/personal_website"]]
     },
     {
 	"name" : "Cognitive Robotics: Wumpus Challenge",
