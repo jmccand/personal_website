@@ -1,0 +1,37 @@
+[
+    {
+	"name" : "RPISEC: RPI's Cybersecurity Team",
+	"start" : "9/23",
+	"end" : "NOW",
+	"details" : "",
+	"images" : [["rpisec_logo.png", "Our logo."]]
+    },
+    {
+	"name" : "RPI Mens' Tennis Team",
+	"start" : "8/23",
+	"end" : "NOW",
+	"details" : "",
+	"images" : [["rpi_tennis_2023_2024.jpeg", "2023-2024 Fall & Spring team photo."]]
+    },
+    {
+	"name" : "2 Bits and A Byte Robotics Team",
+	"start" : "5/19",
+	"end" : "5/23",
+	"details" : "",
+	"images" : [["Christmas_qualifier.png", "A photo of the team in 2022 after winning a qualifier for the Massachusetts State Tournament."]]
+    },
+    {
+	"name" : "Lexington High School Boys' Tennis Team",
+	"start" : "3/20",
+	"end" : "6/23",
+	"details" : "",
+	"images" : [["tennis_caps.jpeg", "THe 2022-2023 Boys' Tennis Captains and Coaches."]]
+    },
+    {
+	"name" : "Lexington Student-Makers Faceshield Manufacturing",
+	"start" : "6/19",
+	"end" : "8/19",
+	"details" : "",
+	"images" : [["face_shields_group.jpeg", "The group of students who worked on manufacturing face shields for the public school system over COVID"], ["FaceShields.jpg", "The face shields spread out over my family's living room during COVID."]]
+    }
+]

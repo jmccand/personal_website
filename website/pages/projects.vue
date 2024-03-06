@@ -19,7 +19,7 @@
       </template>
     </div>
     <div v-if="displayed_project != null" id="popup" class="text-left rounded-md border-4 fixed bg-white right-4 left-4 height-0 top-0 p-4 overflow-y-scroll transition-all duration-1000" :style="{ top: targetTop+'px', height: targetHeight+'px' }">
-      <span class="font-bold pr-4">{{ displayed_project.name }}</span><span class="pr-1">{{ displayed_project.start }}</span>-<span class="pl-1">{{ displayed_project.end }}</span><span class="absolute right-4 top-4 font-sans cursor-pointer p-2" @click="displayed_project=null">&#9587</span> <br />
+      <span class="font-bold pr-4">{{ displayed_project.name }}</span><span class="pr-1">{{ displayed_project.start }}</span>-<span class="pl-1">{{ displayed_project.end }}</span><span class="absolute right-4 top-4 font-sans cursor-pointer p-2" @click="close_popup()">&#9587</span> <br />
       <span>{{ displayed_project.goal }}</span><br />
       <p v-html="displayed_project.details"></p>
       <br />
@@ -59,6 +59,9 @@
    // show initial box
    targetTop.value = rect.top - 10;
    targetHeight.value = displayed_elem.offsetHeight;
+   
+   // prevent scrolling
+   document.body.style.overflow = "hidden";
 
    // wait for box to be displayed on DOM
    await nextTick();
@@ -67,6 +70,12 @@
      targetTop.value = 80;
      targetHeight.value = innerHeight - targetTop.value - 40;
    }, 5);
+ }
+
+ async function close_popup() {
+   displayed_project.value = null;
+   displayed_image_index.value = 0;
+   document.body.style.overflow = "auto";
  }
 
  function findProjectByName(elem_id) {
