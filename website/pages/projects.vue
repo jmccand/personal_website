@@ -13,7 +13,7 @@
 	    <p><span class="font-bold pr-2">More</span><span v-for="more_item in project.more"><MoreLink :to="more_item[1]">{{ more_item[0] }}</MoreLink></span></p>
 	  </div>
 	  <div class="p-2 h-full">
-	    <img :src="'/images/' + project.images[0]" :alt="project.name" class="max-h-[12rem] max-w-[12rem] min-w-[6rem] object-cover">
+	    <img :src="'/images/' + project.images[0]" :alt="project.name" class="max-h-[12rem] max-w-[12rem] min-w-[6rem] object-cover" />
 	  </div>
 	</div>
       </template>
@@ -29,7 +29,7 @@
 	</div>
 	<div v-else class="w-10">
 	</div>
-	<img :src="'/images/' + displayed_project.images[displayed_image_index]" class="max-h-[16rem] max-w-[30rem] min-h-[10rem] object-cover">
+	<img :src="'/images/' + displayed_project.images[displayed_image_index]" class="max-h-[16rem] max-w-[30rem] min-h-[10rem] object-cover" />
 	<div v-if="displayed_image_index < displayed_project.images.length - 1" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="displayed_image_index++">
 	  <p class="w-full">&#10140</p>
 	</div>

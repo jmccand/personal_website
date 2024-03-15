@@ -60,6 +60,16 @@
 	"more" : [["Git Repo", "https://github.com/jmccand/UpDown"], ["Landing Page", "https://updownlhs.org/"], ["Instagram", "https://instagram.com/updownlhs?igshid=NGVhN2U2NjQ0Yg=="]]
     },
     {
+	"name" : "Cryptographic Substitution Cipher Solver",
+	"start" : "1/21",
+	"end" : "1/21",
+	"goal" : "Write a program which solves substitution ciphers using (intelligent) brute force!",
+	"details" : "This project started as a Caesar cipher challenge from a high school teacher. Caesar ciphers are a type of substitution cipher, which is a cipher where each letter is replaced by another unique letter. In Caesar ciphers, the remapping is organized by shifting letters a defined value down the alphabet, a process often visualized by a pair of inner and outer revolvable alphabetic wheels. Caesar ciphers are straightforward for a computer to solve, because there are only 25 possible shifts. After solving the Caesar ciphers, I wanted to write a program that would solve any substitution cipher, which is much more challenging because there are 26! = 2.092279e+13 possible substitution ciphers. The program works recursively by matching encrypted words to potential decryptions 1 word at a time, and seeing if the decryption key created works for the other words. A later addition was to try matching the most frequently occuring English words first, which is expected to find the answer faster on average.",
+	"images" : ["substitution_cipher.png", "caesar_cipher.jpeg"],
+	"tags" : [],
+	"more" : [["Git Repo", "https://github.com/jmccand/cryptography"]]
+    },
+    {
 	"name" : "Candy Clawbot",
 	"start" : "7/18",
 	"end" : "8/19",
