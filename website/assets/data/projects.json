@@ -5,7 +5,7 @@
 	"end" : "NOW",
 	"goal" : "Record what makes me happy and share it with the world!",
 	"details" : "You're looking at it! This website is built with Vue.js, Nuxt JS and Tailwind CSS. It's hosted on AWS Amplify, which provides free hosting for small static websites such as this. The Vue.js framework enables me to make automated HTML, such as this page, which uses a Vue for loop to iterate over all of my projects. The project information is stored in a JSON (JavaScript Object Notation) file, and the .vue file responsible for this page structures and styles the content, making it easy to keep content and formatting individually organized. With its shorthand notation of common styling, Tailwind enables quick adjustment of the appearance of pages, including adding breakpoints for responsive web development (try adjusting the page size!).",
-	"images" : ["nuxt_logo.png"],
+	"images" : ["joel-logo.png"],
 	"tags" : [],
 	"more" : [["Git Repo", "https://github.com/jmccand/personal_website"]]
     },
@@ -40,16 +40,6 @@
 	"more" : [["Git Repo", "https://github.com/jmccand/big-tac-toe"]]
     },
     {
-	"name" : "A Chest Protector for Joey",
-	"start" : "7/22",
-	"end" : "9/22",
-	"goal" : "Create a chest protector for a disabled dog!",
-	"details" : "I heard about this project from a Lexington schoolteacher who was looking for someone to help a dog, named Joey, who was born without front legs. Joey had learned to hop on his hind legs like a kangaroo but slammed his chest on the ground whenever he lost his balance. He needed a chest protector that would absorb the shock of his falls, but such a product was not available on the commercial market, so I designed one for him. I scanned his body using the Lidar sensor on a phone, used Fusion 360 to design a prototype, and 3D printed it out of flexible TPU filament. Upon testing, I realized that I had to prioritize safety, comfort, and convenience as my initial protector was too rough, had inadequate padding, and slid up and down his chest. In later versions, I devised smoother surfaces, thicker padding, and a more secure harness.",
-	"images" : ["joey.jpg", "joey_standing.jpg"],
-	"tags" : [],
-	"more" : []
-    },
-    {
 	"name" : "UpDownLHS: Digital Voting for School Change",
 	"start" : "11/21",
 	"end" : "6/23",
@@ -59,6 +49,26 @@
 	"tags" : [],
 	"more" : [["Git Repo", "https://github.com/jmccand/UpDown"], ["Landing Page", "https://updownlhs.org/"], ["Instagram", "https://instagram.com/updownlhs?igshid=NGVhN2U2NjQ0Yg=="]]
     },
+	{
+	"name" : "A Chest Protector for Joey",
+	"start" : "7/22",
+	"end" : "9/22",
+	"goal" : "Create a chest protector for a disabled dog!",
+	"details" : "I heard about this project from a Lexington schoolteacher who was looking for someone to help a dog, named Joey, who was born without front legs. Joey had learned to hop on his hind legs like a kangaroo but slammed his chest on the ground whenever he lost his balance. He needed a chest protector that would absorb the shock of his falls, but such a product was not available on the commercial market, so I designed one for him. I scanned his body using the Lidar sensor on a phone, used Fusion 360 to design a prototype, and 3D printed it out of flexible TPU filament. Upon testing, I realized that I had to prioritize safety, comfort, and convenience as my initial protector was too rough, had inadequate padding, and slid up and down his chest. In later versions, I devised smoother surfaces, thicker padding, and a more secure harness.",
+	"images" : ["joey.jpg", "joey_standing.jpg"],
+	"tags" : [],
+	"more" : []
+	},
+	{
+	"name" : "Personalized Gifts",
+	"start" : "6/22",
+	"end" : "7/22",
+	"goal" : "Design and manufacture custom gifts for friends!",
+	"details" : "To spread my love for making, I like to design unique, personalized gifts. For a cake topper for an informal wedding celebration, I laser cut a heart with names out of acrylic, to be hung later as a wall decoration. I downloaded the heart from the internet and used Lightburn to add text and customize it. As a housewarming gift, I made a custom house plaque with the house number, family surname, and tennis rackets to represent their favorite pastime. It is also laser cut, but out of wood, so I decided to etch the name rather than cut it; this darkened the wood but did not remove it. Making the house number required using multiple layers in Lightburn, each with a different setting, to produce varying depths and darknesses.",
+	"images" : ["house_plaque.jpg", "acrylic.jpg"],
+	"tags" : [],
+	"more" : []
+	},
     {
 	"name" : "Cryptographic Substitution Cipher Solver",
 	"start" : "1/21",
@@ -70,36 +80,6 @@
 	"more" : [["Git Repo", "https://github.com/jmccand/cryptography"]]
     },
     {
-	"name" : "Candy Clawbot",
-	"start" : "7/18",
-	"end" : "8/19",
-	"goal" : "Remake the candy claw arcade game to showcase robotics to kids!",
-	"details" : "The clawbot utilizes an H-frame x-y positioning system (same as modern 3D printers) which uses 2 motors and a single shared belt to traverse the x-y plane. My dad, brother and I found this design while researching potential x-y motion systems, and chose it because of its simplicity and reliability. I enjoyed designing many custom parts for the clawbot, especially the joystick, which was printed as an in-place captive ball joint. Using a magnet mounted on the bottom and magnetic reed switches on the 4 poles, the clawbot can sense joystick direction. The clawbot is operated by an Arduino Mega 2560, which takes the boolean sensor inputs and communicates with 2 dual-channel motor controllers to control 3 motors and one servo. The clawbot was a great success which I took to many robotics events. Many of the kids respond with glee as they drive the claw and experience robotics hands on, prompting the parents to ask about how their child can get involved.",
-	"images" : ["clawbot_light.jpg", "clawbot_corner.jpg", "clawbot_side.jpg", "clawbot_dark.jpg", "clawbot_testing.jpg"],
-	"tags" : [],
-	"more" : []
-    },
-    {
-	"name" : "Card Covers for One Night Ultimate Werewolf",
-	"start" : "3/20",
-	"end" : "4/20",
-	"goal" : "Cover the Werewolf cards to prevent distinguishable wearout!",
-	"details" : "One Night Ultimate Werewolf is a social deception game where players draw cards that give them roles to play. One problem with Werewolf, and any card game, is that the cards become readable as they wear down in distinguishable ways. To prevent this form of cheating, I designed card covers to cover the edges of the cards, which erode first. I iterated to find the correct balance between the ease of sliding the card in and out of the cover and the friction that holds the cards in. I also tapered the corners because they were too sharp. 3D printing suits this project very well because it produces practically indistinguishable covers which makes the cards identical from the backside. Furthermore, if they get dirty or damaged, the covers can be easily and cheaply replaced.",
-	"images" : ["werewolf.jpg"],
-	"tags" : [],
-	"more" : [["Thingiverse", "https://www.thingiverse.com/thing:4317959"]]
-    },
-    {
-	"name" : "Personalized Gifts",
-	"start" : "6/22",
-	"end" : "7/22",
-	"goal" : "Design and manufacture custom gifts for friends!",
-	"details" : "To spread my love for making, I like to design unique, personalized gifts. For a cake topper for an informal wedding celebration, I laser cut a heart with names out of acrylic, to be hung later as a wall decoration. I downloaded the heart from the internet and used Lightburn to add text and customize it. As a housewarming gift, I made a custom house plaque with the house number, family surname, and tennis rackets to represent their favorite pastime. It is also laser cut, but out of wood, so I decided to etch the name rather than cut it; this darkened the wood but did not remove it. Making the house number required using multiple layers in Lightburn, each with a different setting, to produce varying depths and darknesses.",
-	"images" : ["house_plaque.jpg", "acrylic.jpg"],
-	"tags" : [],
-	"more" : []
-    },
-    {
 	"name" : "3D Printed Watch Band",
 	"start" : "5/20",
 	"end" : "7/20",
@@ -109,6 +89,26 @@
 	"tags" : [],
 	"more" : []
     },
+	{
+	"name" : "Card Covers for One Night Ultimate Werewolf",
+	"start" : "3/20",
+	"end" : "4/20",
+	"goal" : "Cover the Werewolf cards to prevent distinguishable wearout!",
+	"details" : "One Night Ultimate Werewolf is a social deception game where players draw cards that give them roles to play. One problem with Werewolf, and any card game, is that the cards become readable as they wear down in distinguishable ways. To prevent this form of cheating, I designed card covers to cover the edges of the cards, which erode first. I iterated to find the correct balance between the ease of sliding the card in and out of the cover and the friction that holds the cards in. I also tapered the corners because they were too sharp. 3D printing suits this project very well because it produces practically indistinguishable covers which makes the cards identical from the backside. Furthermore, if they get dirty or damaged, the covers can be easily and cheaply replaced.",
+	"images" : ["werewolf.jpg"],
+	"tags" : [],
+	"more" : [["Thingiverse", "https://www.thingiverse.com/thing:4317959"]]
+	},
+	{
+	"name" : "Candy Clawbot",
+	"start" : "7/18",
+	"end" : "8/19",
+	"goal" : "Remake the candy claw arcade game to showcase robotics to kids!",
+	"details" : "The clawbot utilizes an H-frame x-y positioning system (same as modern 3D printers) which uses 2 motors and a single shared belt to traverse the x-y plane. My dad, brother and I found this design while researching potential x-y motion systems, and chose it because of its simplicity and reliability. I enjoyed designing many custom parts for the clawbot, especially the joystick, which was printed as an in-place captive ball joint. Using a magnet mounted on the bottom and magnetic reed switches on the 4 poles, the clawbot can sense joystick direction. The clawbot is operated by an Arduino Mega 2560, which takes the boolean sensor inputs and communicates with 2 dual-channel motor controllers to control 3 motors and one servo. The clawbot was a great success which I took to many robotics events. Many of the kids respond with glee as they drive the claw and experience robotics hands on, prompting the parents to ask about how their child can get involved.",
+	"images" : ["clawbot_light.jpg", "clawbot_corner.jpg", "clawbot_side.jpg", "clawbot_dark.jpg", "clawbot_testing.jpg"],
+	"tags" : [],
+	"more" : []
+	},	
     {
 	"name" : "OneTesla Tesla Coil Kit",
 	"start" : "5/16",
