@@ -11,7 +11,6 @@
 	  <li><NuxtLink to="/mission">Mission</NuxtLink></li>
 	  <li><NuxtLink to="/projects">Projects</NuxtLink></li>
 	  <li><NuxtLink to="/social">Social</NuxtLink></li>
-	  <li><NuxtLink to="/timeline">Timeline</NuxtLink></li>
 	</ul>
       </nav>
     </header>
