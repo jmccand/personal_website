@@ -24,13 +24,13 @@
       <p v-html="displayed_project.details"></p>
       <br />
       <div class="flex flex-row gap-5 items-stretch w-100 items-center justify-center">
-        <div v-if="displayed_image_index > 0" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="displayed_image_index--">
+        <div v-if="displayed_image_index > 0" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="(event) => {event.stopPropagation(); displayed_image_index--; }">
           <p class="w-full rotate-180">&#10140</p>
         </div>
         <div v-else class="w-10">
         </div>
         <img :src="'/images/' + displayed_project.images[displayed_image_index]" class="max-h-[16rem] max-w-[30rem] min-h-[10rem] object-cover" />
-        <div v-if="displayed_image_index < displayed_project.images.length - 1" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="displayed_image_index++">
+        <div v-if="displayed_image_index < displayed_project.images.length - 1" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="(event) => {event.stopPropagation(); displayed_image_index++; }">
           <p class="w-full">&#10140</p>
         </div>
         <div v-else class="w-10">
@@ -77,6 +77,8 @@
 
     window.addEventListener('click', function(event) {
       const popup = document.getElementById('popup');
+      console.log(event.target);
+      console.log(popup);
       if (popup && !popup.contains(event.target)) {
         close_popup();
       }
