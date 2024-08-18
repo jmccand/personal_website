@@ -2,18 +2,35 @@
   <!-- common layout for each page -->
   <div>
     <!-- define header -->
-    <header class="flex flex-row p-4 space-x-10 md:text-lg sm:text-base text-sm shadow-lg">
-      <span class="w-auto min-w-fit font-bold">Joel McCandless</span>
+    <header class="flex flex-row p-4 sm:space-x-10 md:text-lg sm:text-base text-sm shadow-lg justify-start items-center">
+      <div class="flex flex-col justify-center sm:hidden h-0 cursor-pointer" @click="navbarOpen=!navbarOpen">
+        <p class="flex text-xl">&#8801;</p>
+      </div>
+      <div class="flex flex-row justify-center w-full sm:w-fit">
+        <span class="w-auto min-w-fit font-bold">Joel McCandless</span>
+      </div>
       <!-- navigation links -->
-      <nav class="container flex">
-	<ul class="flex flex-row space-x-8">
-	  <li><NuxtLink to="/about">About Me</NuxtLink></li>
-	  <li><NuxtLink to="/mission">Mission</NuxtLink></li>
-	  <li><NuxtLink to="/projects">Projects</NuxtLink></li>
-	  <li><NuxtLink to="/social">Social</NuxtLink></li>
-	</ul>
-      </nav>
+      <div class="hidden sm:flex">
+        <nav class="container flex">
+          <ul class="flex flex-row space-x-8">
+            <li><NuxtLink to="/about">About Me</NuxtLink></li>
+            <li><NuxtLink to="/mission">Mission</NuxtLink></li>
+            <li><NuxtLink to="/projects">Projects</NuxtLink></li>
+            <li><NuxtLink to="/social">Social</NuxtLink></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <div v-if="navbarOpen">
+      <nav class="container flex border-b-2 pt-3">
+        <ul class="flex flex-col w-full items-center">
+          <li class="p-2 pl-4"><NuxtLink to="/about" @click="navbarOpen=false">About Me</NuxtLink></li>
+          <li class="p-2 pl-4"><NuxtLink to="/mission" @click="navbarOpen=false">Mission</NuxtLink></li>
+          <li class="p-2 pl-4"><NuxtLink to="/projects" @click="navbarOpen=false">Projects</NuxtLink></li>
+          <li class="p-2 pl-4"><NuxtLink to="/social" @click="navbarOpen=false">Social</NuxtLink></li>
+        </ul>
+      </nav>
+    </div>
 
     <body style="min-height: 80vh">
       <!-- page content -->
@@ -43,6 +60,8 @@
         Lexington, MA
       </TagLink>
     </footer>
-    
   </div>
 </template>
+<script setup>
+  var navbarOpen = ref(false);
+</script>
