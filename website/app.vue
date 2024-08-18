@@ -2,12 +2,12 @@
   <!-- common layout for each page -->
   <div>
     <!-- define header -->
-    <header class="flex flex-row p-4 sm:space-x-10 md:text-lg sm:text-base text-sm shadow-lg justify-start items-center">
+    <header class="flex flex-row p-4 md:text-lg sm:text-base text-sm shadow-lg justify-start items-center">
       <div class="flex flex-col justify-center sm:hidden h-0 cursor-pointer" @click="navbarOpen=!navbarOpen">
         <p class="flex text-xl">&#8801;</p>
       </div>
       <div class="flex flex-row justify-center w-full sm:w-fit">
-        <span class="w-auto min-w-fit font-bold">Joel McCandless</span>
+        <span class="w-auto min-w-fit font-bold sm:pr-10">Joel McCandless</span>
       </div>
       <!-- navigation links -->
       <div class="hidden sm:flex">
