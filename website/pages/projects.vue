@@ -5,8 +5,8 @@
     </div>
     <div class="text-left w-full pt-4">
       <template v-for="(project, index) in projects">
-      <div v-if="!expanded[index][0]" :id="project.name" class="cursor-pointer mb-4 flex flex-col sm:flex-row border-2 items-center" @click="() => expanded[index] = [true, 0]">
-        <div class="p-2 pr-0">
+      <div v-if="!expanded[index][0]" :id="project.name" class="cursor-pointer mb-4 flex flex-col border-2 items-center sm:flex-row" @click="() => expanded[index] = [true, 0]">
+        <div class="p-2 sm:pr-0">
           <span class="font-bold pr-4">{{ project.name }}</span><span class="pr-1">{{ project.start }}</span>-<span class="pl-1">{{ project.end }}</span><br />
           <span>{{ project.goal }}</span><br />
           <p v-html="project.details" class="line-clamp-5"></p>
