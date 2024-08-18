@@ -17,20 +17,20 @@
         </div>
       </div>
       <div v-else class="cursor-pointer mb-4 border-2 p-2" @click="() => expanded[index] = [false, 0]">
-        <span class="font-bold pr-4">{{ project.name }}</span><span class="pr-1">{{ project.start }}</span>-<span class="pl-1">{{ project.end }}</span><span class="absolute right-4 top-4 font-sans cursor-pointer p-2" @click="close_popup()">&#9587</span> <br />
+        <span class="font-bold pr-4">{{ project.name }}</span><span class="pr-1">{{ project.start }}</span>-<span class="pl-1">{{ project.end }}</span><br>
         <span>{{ project.goal }}</span><br />
         <p v-html="project.details"></p>
         <br>
-        <div class="flex flex-row gap-5 items-stretch w-100 items-center justify-center">
+        <div class="flex flex-row sm:gap-5 items-stretch w-100 items-center justify-center">
           <div v-if="expanded[index][1] > 0" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="(event) => {event.stopPropagation(); expanded[index][1]--; }">
             <p class="w-full rotate-180">&#10140</p>
           </div>
-          <div v-else class="w-10"></div>
-          <img :src="'/images/' + project.images[expanded[index][1]]" class="max-h-[16rem] max-w-[30rem] min-h-[10rem] object-cover" />
+          <div v-else class="flex w-10"></div>
+          <img :src="'/images/' + project.images[expanded[index][1]]" class="flex-auto max-w-[32rem] max-h-[16rem] min-w-[10rem]"/>
           <div v-if="expanded[index][1] < project.images.length - 1" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="(event) => {event.stopPropagation(); expanded[index][1]++; }">
             <p class="w-full">&#10140</p>
           </div>
-          <div v-else class="w-10">
+          <div v-else class="flex w-10">
           </div>
         </div>
         <br>
