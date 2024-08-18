@@ -26,7 +26,7 @@
             <p class="w-full rotate-180">&#10140</p>
           </div>
           <div v-else class="flex w-10"></div>
-          <img :src="'/images/' + project.images[expanded[index][1]]" class="flex-auto max-w-[32rem] max-h-[16rem] min-w-[10rem]"/>
+          <img :src="'/images/' + project.images[expanded[index][1]]" class="flex max-h-[16rem] max-w-[32rem] min-w-[10rem]"/>
           <div v-if="expanded[index][1] < project.images.length - 1" class="flex w-10 text-center items-center justify-items-center bg-slate-200 animate-pulse cursor-pointer" @click="(event) => {event.stopPropagation(); expanded[index][1]++; }">
             <p class="w-full">&#10140</p>
           </div>
