@@ -125,7 +125,7 @@
 		"end" : "8/19",
 		"goal" : "Remake the candy claw arcade game to showcase robotics to kids!",
 		"details" : "The clawbot utilizes an H-frame x-y positioning system (same as modern 3D printers) which uses 2 motors and a single shared belt to traverse the x-y plane. My dad, brother and I found this design while researching potential x-y motion systems, and chose it because of its simplicity and reliability. I enjoyed designing many custom parts for the clawbot, especially the joystick, which was printed as an in-place captive ball joint. Using a magnet mounted on the bottom and magnetic reed switches on the 4 poles, the clawbot can sense joystick direction. The clawbot is operated by an Arduino Mega 2560, which takes the boolean sensor inputs and communicates with 2 dual-channel motor controllers to control 3 motors and one servo. The clawbot was a great success which I took to many robotics events. Many of the kids respond with glee as they drive the claw and experience robotics hands on, prompting the parents to ask about how their child can get involved.",
-		"images" : ["clawbot_light.jpg", "clawbot_corner.jpg", "clawbot_side.jpg", "clawbot_dark.jpg", "clawbot_testing.jpg"],
+		"images" : ["clawbot_testing.jpg", "clawbot_light.jpg", "clawbot_corner.jpg", "clawbot_side.jpg", "clawbot_dark.jpg"],
 		"tags" : [],
 		"more" : []
 	},
