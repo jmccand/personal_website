@@ -34,7 +34,7 @@
 		"start" : "8/24",
 		"end" : "8/24",
 		"goal" : "Design and 3D print custom shock absorbers for my own use!",
-		"details" : "After my last shock absorber broke, I decided to try to design my own rather than buying a new one. I designed a shock absorber with the RPI logo on one side and my logo on the other, and printed it out of flexible TPU (Thermoplastic polyurethane) filament using my Prusa XL Multicolor. I iterated on the print settings and enlarged the features as much as I could, because the printer struggles with sub-millimeter details. The details were not very fine, but the shock absorber functions very well. Printing this part was very challenging because it's circular, so it requires a raft and a lot of supports to print. If I tried this again, perhaps I would design a square shock absorber.",
+		"details" : "After my last shock absorber broke, I decided to try to design my own rather than buy a new one. I designed a shock absorber with the RPI logo on one side and my logo on the other, and printed it out of flexible TPU (Thermoplastic polyurethane) filament using my Prusa XL Multicolor. I embedded my logo and the RPI logo into the shock absorber to increase cohesion between the black and red TPU filaments. I iterated on the print settings and enlarged the features as much as I could, because the printer struggles with sub-millimeter details. The details were not very fine, but the shock absorber functions very well. Printing this part was very challenging because it's circular, so it requires a raft and a lot of supports to print. If I tried this again, perhaps I would design a square shock absorber.",
 		"images" : ["shock_absorber_JM.jpeg", "shock_absorber_RPI.jpeg", "shock_absorber_racket.jpeg"],
 		"tags" : [],
 		"more" : []
